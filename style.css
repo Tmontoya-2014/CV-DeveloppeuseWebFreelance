@@ -1,0 +1,257 @@
+body
+{
+	background-color: #D9D8D4;
+}
+.page
+{
+	display: flex;
+	flex-direction: column;
+	max-width: 1080px;
+	margin: auto;
+}
+main, header
+{
+    display: flex;
+    background-color: #FFFFFF;
+}
+/*Police*/
+*
+{
+	font-family: "SinkinSans-400Regular", "WorkSans-Regular", "Montserrat-Light", "trebuchet MS", sans-serif;
+}
+h1
+{
+	font-size: 2.0em;
+}
+h2
+{
+	font-size: 1.4em;
+}
+h3, h4
+{
+	font-size: 1.2em;
+}
+/*header*/
+.photo
+{
+    width: 33%;
+    text-align: center;
+    background-color: #EEA13F;
+}
+.image
+{
+	overflow: hidden;
+	border-radius: 100px;
+	width: 200px;
+    height: 200px;
+    margin: 60px;
+}
+#nom
+{
+    margin: auto;
+}
+strong
+{
+	color: #EEA13F;
+}
+mark
+{
+    border-bottom: 1.5px solid #EEA13F;
+    background-color: #FFFFFF;
+}
+/*Section1*/
+#personnelle
+{
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	background-color: #EEA13F
+}
+#contact, #moi, #loisirs
+{
+	background-color: #424A49;
+	color: #EEA13F;
+	text-align: center;
+	padding: 5px;
+}
+#mecontacter
+{
+	margin-left: 20px;
+}
+#description
+{
+	margin: 20px;
+	text-align: justify;
+}
+/*Section2*/
+#professionnelle
+{
+	flex-direction: column;
+	width: 67%;
+}
+#professionnelle h2
+{
+	color: #424A49;
+	font-weight: bold;
+	border-bottom: 1.5px solid #EEA13F;
+}
+h2 i 
+{
+	margin-bottom: inherit;
+	margin-right: 20px;
+}
+.container 
+{
+	display: flex;
+	flex-direction: column;
+	width: 67%;
+	margin-bottom: 30px;
+}
+.experience
+{
+	padding-left: 20px;
+}
+li
+{
+	display: flex;
+}
+.fa-circle
+{
+	font-weight: bold;
+}
+ul i
+{
+	color: #EEA13F;
+	font-size: 12px;
+}
+.date h3
+{
+	display: contents;
+}
+.date
+{
+	width: 33%;
+}
+.fa-caret-right
+{
+	margin-right: 20px;
+}
+/*footer*/
+footer
+{
+	display: flex;
+	background-color: #FFFFFF;
+}
+#footer-left
+{
+	width: 33%;
+	background-color: #EEA13F;
+	flex-direction: column;
+}
+#footer-right
+{
+	width: 67%;
+}
+#hobbies
+{
+	text-align-last: center;
+	font-size: 45px;
+	color: #424A49;
+	margin-top: 30px;
+}
+#recommandations
+{
+	padding-left: 20px;
+}
+#recommandations h2
+{
+	color: #424A49;
+	font-weight: bold;
+	border-bottom: 1.5px solid #EEA13F;
+}
+#reco
+{
+	margin: 0px 0px 50px 50px;;
+}
+
+/*Responsive*/
+
+/*tablette*/
+@media all and (min-width: 768px) and (max-width: 1024px)
+{
+	header, footer
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	main
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.photo, #personnelle, #footer-left
+	{
+		width: 100%;
+	}
+	#hobbies
+	{
+		margin: 20px;
+		justify-content: center;
+	}
+}
+/*mobile*/
+@media all and (max-device-width: 768px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#photo
+	{
+		width: 100%;
+	}
+	main
+	{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	#personnelle
+	{
+		width: 100%;
+	}
+	#professionnelle
+	{
+		width: 100%;
+	}
+	#hobbies
+	{
+		justify-content: center;
+		margin: 20px;
+	}
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#footer-left
+	{
+		width: 100%;
+	}
+	#professionnelle
+	{
+		font-size: 2.6em;
+	}
+	h1 
+	{
+		font-size: 3.2em;
+	}
+	#reco
+	{
+		font-size: 2.2em;
+	}
+	footer i 
+	{
+		margin: inherit;
+	}
+}
